@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    padding: 0px 60px 0;
+}
+
+.menu_item:link, :visited, .register:link, :visited, .menu_item_contacts:link, :visited {
+    color: white;
+    text-decoration: none;
+}
+
+.menu_item:hover, .register:hover, .menu_item_contacts:hover {
+    filter: blur(1px);
+    text-decoration: none;
+}
+
+.menu_item, .menu_item_contacts {
+    font-size: 1.1em;
+}
+
+.menu_items {
+    display: flex;
+    padding-left: 300px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    border-bottom: 1px solid white;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.menu_item, .menu_item_contacts {
+    margin-right: 1em;
+    display: flex;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: white;
+}
+
+.register {
+    display: flex;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/* Body */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    background: url(../Images/Фон.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.text {
+    text-align: center ;
+    color:white;
+
+}
+
+.content {
+    background: #262931;
+    border-radius: 10%;
+    padding: 2%;
+}
+
+.enemy, .heroes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    margin-bottom: -30px;
+    justify-content: center;
+}
+
+.enemy {
+    border-bottom: 2px solid white;
+}
+
+.zagolovok {
+    text-align: center;
+    font-family: 'Fredoka';
+    font-size: 48px;
+    color: white;
+}
+
+.personages {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    font-size: 40px;
+    padding-top: 100px;
+    text-decoration: none;
+}
+
+.lorem {
+    display: flex;
+    width: 900px;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.lorem_text {
+    display: flex;
+    justify-content: center;
+}
+
+.more{
+    display: flex;
+    align-items: center;
+    padding-left: 24%;
+    opacity: 0;
+    color: white;
+    transition: 1s;
+}
+
+.slick-prev {
+    background-color: black;
+    width: 43px;
+}
+
+/* enemy */
+
+.characters {
+    display: flex;
+    width: 324px;
+    height: 321px;
+    margin:0px 40px 40px 40px;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    transition: 1s;
+}
+
+
+
+.characters:hover, .more:hover {
+    transform: scale(1.2);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.characters:active {
+    transform: scale(1);
+}
+
+
+/* Footer styles */
+
+.footer_rect {
+    padding: 30px 50px;
+    background: #1E2833;
+}
+
+.li {
+    display: list-item;
+    text-align: center;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    
+}
+
+.footer_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content {
+    display: flex;
+    color: white;
+    font-size: 2em;
+    justify-content: flex-start;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+ul { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.under {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.under:link, :visited {
+    color: white;
+    text-decoration: none;
+}
+
+.under:hover, .register:hover {
+    filter: blur(1px);
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 1020px) {
+    .logo {
+        display: none;
+    } 
+
+    .menu_items {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .menu {
+        display: none;
+    }
+
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: #848484;
+        transform: translateX(-100%);
+    }
+
+    .menu_small_item, .menu_item_contacts {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inner {
+        padding-top: calc(50px + 2em);
+    }
+
+    .inner p {
+        margin: 0
+    }
+}
+
